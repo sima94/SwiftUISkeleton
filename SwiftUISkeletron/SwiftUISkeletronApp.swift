@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct SwiftUISkeletronApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+
+	let appFactory = AppFactory()
+
+	init(){
+		appFactory.registerDependences()
+	}
+
+	var body: some Scene {
+		WindowGroup {
+			AppMainCoordinatorView()
+		}
+	}
 }

@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwiftUISkeletron.xcscheme_^#shared#^_</key>
+		<key>SwiftUISkeletron Prod.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SwiftUISkeletron Test.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>39148C122DC15BF40004B8B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39148C222DC15BF50004B8B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39148C2C2DC15BF50004B8B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>399472A92DDB3887002A7E34</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

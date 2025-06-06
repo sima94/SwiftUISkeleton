@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3911B95A2DE5CD060079A231 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 3911B9592DE5CD060079A231 /* SwiftyBeaver */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		39148C242DC15BF50004B8B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3911B95A2DE5CD060079A231 /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = SwiftUISkeletron;
 			packageProductDependencies = (
+				3911B9592DE5CD060079A231 /* SwiftyBeaver */,
 			);
 			productName = SwiftUISkeletron;
 			productReference = 39148C132DC15BF40004B8B1 /* SwiftUISkeletron.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 39148C0A2DC15BF40004B8B1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3911B9582DE5CD060079A231 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 39148C142DC15BF40004B8B1 /* Products */;
 			projectDirPath = "";
@@ -269,8 +278,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		39148C352DC15BF50004B8B1 /* Debug */ = {
+		39691B792DCB9D9900EB8967 /* Test */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 39148C152DC15BF40004B8B1 /* SwiftUISkeletron */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configs/Test.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -330,10 +341,85 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Test;
 		};
-		39148C362DC15BF50004B8B1 /* Release */ = {
+		39691B7A2DCB9D9900EB8967 /* Test */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 39148C152DC15BF40004B8B1 /* SwiftUISkeletron */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configs/Test.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Test;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUISkeletron/SupportingFiles/SwiftUISkeletron.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISkeletron/PreviewContent\"";
+				DEVELOPMENT_TEAM = D8F838MZ5K;
+				DONT_GENERATE_INFOPLIST_FILE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Codefusion.SwiftUISkeletron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		39691B7B2DCB9D9900EB8967 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 39148C152DC15BF40004B8B1 /* SwiftUISkeletron */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configs/Test.xcconfig;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8F838MZ5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Codefusion.SwiftUISkeletronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUISkeletron.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUISkeletron";
+			};
+			name = Test;
+		};
+		39691B7C2DCB9D9900EB8967 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 39148C152DC15BF40004B8B1 /* SwiftUISkeletron */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configs/Test.xcconfig;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D8F838MZ5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Codefusion.SwiftUISkeletronUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUISkeletron;
+			};
+			name = Test;
+		};
+		39691B7D2DCB9DAB00EB8967 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 39148C152DC15BF40004B8B1 /* SwiftUISkeletron */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configs/Prod.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -386,17 +472,19 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Prod;
 		};
-		39148C382DC15BF50004B8B1 /* Debug */ = {
+		39691B7E2DCB9DAB00EB8967 /* Prod */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Prod;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUISkeletron/SupportingFiles/SwiftUISkeletron.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISkeletron/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISkeletron/PreviewContent\"";
 				DEVELOPMENT_TEAM = D8F838MZ5K;
+				DONT_GENERATE_INFOPLIST_FILE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -415,38 +503,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Prod;
 		};
-		39148C392DC15BF50004B8B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUISkeletron/Preview Content\"";
-				DEVELOPMENT_TEAM = D8F838MZ5K;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Codefusion.SwiftUISkeletron;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		39148C3B2DC15BF50004B8B1 /* Debug */ = {
+		39691B7F2DCB9DAB00EB8967 /* Prod */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -463,28 +522,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUISkeletron.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUISkeletron";
 			};
-			name = Debug;
+			name = Prod;
 		};
-		39148C3C2DC15BF50004B8B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8F838MZ5K;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Codefusion.SwiftUISkeletronTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUISkeletron.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUISkeletron";
-			};
-			name = Release;
-		};
-		39148C3E2DC15BF50004B8B1 /* Debug */ = {
+		39691B802DCB9DAB00EB8967 /* Prod */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -499,24 +539,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SwiftUISkeletron;
 			};
-			name = Debug;
-		};
-		39148C3F2DC15BF50004B8B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D8F838MZ5K;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Codefusion.SwiftUISkeletronUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwiftUISkeletron;
-			};
-			name = Release;
+			name = Prod;
 		};
 /* End XCBuildConfiguration section */
 
@@ -524,40 +547,59 @@
 		39148C0E2DC15BF40004B8B1 /* Build configuration list for PBXProject "SwiftUISkeletron" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39148C352DC15BF50004B8B1 /* Debug */,
-				39148C362DC15BF50004B8B1 /* Release */,
+				39691B792DCB9D9900EB8967 /* Test */,
+				39691B7D2DCB9DAB00EB8967 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Test;
 		};
 		39148C372DC15BF50004B8B1 /* Build configuration list for PBXNativeTarget "SwiftUISkeletron" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39148C382DC15BF50004B8B1 /* Debug */,
-				39148C392DC15BF50004B8B1 /* Release */,
+				39691B7A2DCB9D9900EB8967 /* Test */,
+				39691B7E2DCB9DAB00EB8967 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Test;
 		};
 		39148C3A2DC15BF50004B8B1 /* Build configuration list for PBXNativeTarget "SwiftUISkeletronTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39148C3B2DC15BF50004B8B1 /* Debug */,
-				39148C3C2DC15BF50004B8B1 /* Release */,
+				39691B7B2DCB9D9900EB8967 /* Test */,
+				39691B7F2DCB9DAB00EB8967 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Test;
 		};
 		39148C3D2DC15BF50004B8B1 /* Build configuration list for PBXNativeTarget "SwiftUISkeletronUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39148C3E2DC15BF50004B8B1 /* Debug */,
-				39148C3F2DC15BF50004B8B1 /* Release */,
+				39691B7C2DCB9D9900EB8967 /* Test */,
+				39691B802DCB9DAB00EB8967 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Test;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3911B9582DE5CD060079A231 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3911B9592DE5CD060079A231 /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3911B9582DE5CD060079A231 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39148C0B2DC15BF40004B8B1 /* Project object */;
 }

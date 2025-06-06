@@ -1,0 +1,13 @@
+//
+//  Test.xcconfig
+//  Srbija Voz
+//
+//  Created by Stefan Simic on 19.4.24..
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ASSETCATALOG_COMPILER_APPICON_NAME = SwiftUISkeletron test
+SERVER = test
+APP_ICON = Test
